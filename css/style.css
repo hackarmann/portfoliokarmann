@@ -1,0 +1,170 @@
+html * {
+	padding:0;
+	margin:0;
+}
+/** basic body attributes 
+ - font
+ - background
+ - size
+
+**/
+
+*{
+	box-sizing:border-box;
+}
+body{
+	background: #fff;
+	font-family:"karmina" ;
+	font-size: 100%;
+	color: #000;   
+	width:100%;
+	overflow-x:hidden;
+}
+header{
+	min-height: 100vh;
+	
+	background-color: #f8f4f4;
+	text-align: center;
+	display: flex;
+	display: -webkit-flex;
+	align-items:center;
+	-webkit-align-items:center;
+	padding: 20px 0;
+	box-sizing:border-box;
+}
+
+nav {
+	position: absolute;
+	top: 25px;
+	width: 100%;
+}
+
+nav a {
+	color: #3B8686;
+	padding: 10px 20px;
+	text-decoration: none;
+	font-weight: bold;
+	margin: 20px;
+	border-bottom: 2px solid #3B8686;
+	transition: all .2s;
+}
+
+nav a:hover {
+	border-bottom: 2px solid #F38630;
+}
+
+.aktuelle-seite {
+	border-bottom: 2px solid #F38630;	
+}
+
+.logo {
+	position: relative;
+	width: 550px;
+	height: 560px;
+	background: url(../pics/logo.png) no-repeat; 
+	margin: 0 auto;
+	padding-left: 10px;
+	z-index: 0;
+	background-size: contain;
+	display: flex;
+	display: -webkit-flex;
+	align-items:center;
+	-webkit-align-items:center;
+	
+}
+.logo>div {
+margin-top: -20px;
+	width: 100%;
+	text-align: center;
+	position: relative;
+	
+}
+.logo h1{
+font-size: 30px;
+font-weight: normal;
+margin-bottom: 10px;
+}
+
+.logo h2{
+ font-size: 16px;
+ color: #777777;
+ font-weight: normal;
+
+}
+.about {
+	position: relative;
+	width: 612px;
+	height: 756px;
+	background: url(../pics/aboutseite2.jpg) no-repeat; 
+	background-size: 100% 100%;
+	margin: 0 auto;
+	margin-top: 6%;
+	z-index: 0;
+}
+.about img {
+	position: relative;
+	top: 33px;
+	left: -178px;
+	z-index: 300;
+}
+.about span.ttl {
+	width: auto;
+	text-align: center;
+	position: absolute;
+	top:  26%;
+	left: 51%;
+	font-weight: bold;
+}
+.about span.txt {
+	width: 28%;
+	text-align: center;
+	position: absolute;
+	top:  30%;
+	left: 39%;
+}
+
+
+.grid{
+	background-color: #333;
+	display: flex;
+	display: -webkit-flex;
+	flex-wrap:wrap;
+	-webkit-flex-wrap:wrap;
+	padding: 5px;
+}
+.grid-item{
+	padding: 5px;	
+	width: 33%
+
+}
+.grid-item a{
+	display: block;
+	margin-bottom: 5px;
+
+}
+.grid-item img{
+	width: 100%;
+
+}
+
+footer {
+	width: 100%;
+	text-align: center;
+}
+
+footer p {
+	margin-bottom: 30px;
+}
+
+.footertext {
+	color: #efefef; 
+	text-transform: uppercase;
+	opacity: .5;
+	letter-spacing: 2px;
+}
+
+@media screen and (max-width:680px){
+	.grid-item{
+		width: 100%;
+	}	
+}
